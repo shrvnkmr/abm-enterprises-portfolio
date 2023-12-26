@@ -1,5 +1,4 @@
 import "~/styles/globals.css";
-import { BsFillBuildingsFill } from "react-icons/bs";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({

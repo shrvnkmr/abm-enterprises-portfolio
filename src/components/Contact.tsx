@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import Image from "next/image";
-import SocialMediaLink from "~/components/SocialLink";
 import {
   BsFillEnvelopeFill,
   BsFillTelephoneOutboundFill,
