@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col gap-8 bg-gray-700 bg-opacity-25 p-12 lg:flex-row"
+      className="md:p-12 md:px-20 flex flex-col gap-8 bg-gray-700 bg-opacity-25 p-8 lg:flex-row"
     >
       <div className="flex flex-col justify-center gap-4">
         <h2 className="text-xl font-semibold">{enterpriseName}</h2>

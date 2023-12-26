@@ -13,10 +13,15 @@ import Image from "next/image";
 const Listings = () => {
   const { title, description, listing } = textContent.listings;
   return (
-    <section id="listings" className="flex flex-col justify-center gap-12 p-12">
+    <section
+      id="listings"
+      className="md:p-12 flex flex-col justify-center gap-12 p-8"
+    >
       <div className="flex flex-col justify-center gap-4">
         <h3 className="m-auto text-xl font-semibold">{title}</h3>
-        <h3 className="text-md m-auto px-8 font-extralight">{description}</h3>
+        <h3 className="text-md m-auto px-0 font-extralight md:px-8">
+          {description}
+        </h3>
       </div>
       <div className="m-auto px-8">
         <Carousel
