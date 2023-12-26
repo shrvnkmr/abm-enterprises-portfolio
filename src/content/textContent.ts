@@ -35,9 +35,11 @@ interface TextContent {
   contact: {
     title: string;
     description: string;
+    name: string;
     tel: string;
     alternateTel: string;
     email: string;
+    address: string;
   };
   navbar: {
     about: navSections;
@@ -132,9 +134,11 @@ export const textContent: TextContent = {
     title: "Get in touch",
     description:
       "Whether you're buying, selling, or investing, ABM Enterprises is here to guide you every step of the way. Let's embark on this exciting journey together and turn your real estate dreams into reality.",
-    tel: "+91 9741213681",
+    name: "AC Ashok",
+    tel: "+91 9741213681 ,",
     alternateTel: "+91 9483844344",
     email: "ashokchengappa21@gmail.com",
+    address: "Virajpet - Kodagu, Karnataka",
   },
   navbar: {
     about: "About",

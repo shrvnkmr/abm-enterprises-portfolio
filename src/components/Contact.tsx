@@ -3,6 +3,7 @@
 import Image from "next/image";
 import {
   BsFillEnvelopeFill,
+  BsFillGeoAltFill,
   BsFillTelephoneOutboundFill,
   BsPersonFill,
 } from "react-icons/bs";
@@ -12,7 +13,7 @@ import Link from "next/link";
 
 const Contact = () => {
   const { contact, footer } = textContent;
-  const { title, description, tel, alternateTel, email } = contact;
+  const { title, description, name, tel, alternateTel, email, address } = contact;
   return (
     <section
       id="contact"
@@ -31,7 +32,7 @@ const Contact = () => {
           <div className="text-md mt-4 flex flex-col gap-2 font-extralight">
             <span className="flex items-center gap-3">
               <BsPersonFill />
-              <p className="">A C Ashok</p>
+              <p>{name}</p>
             </span>
             <span className="flex items-center gap-3">
               <BsFillTelephoneOutboundFill />
@@ -44,7 +45,6 @@ const Contact = () => {
                   {tel}
                 </Link>
               </p>
-              {", "}
               <p>
                 <Link
                   href={footer.alternateTel}
@@ -67,6 +67,11 @@ const Contact = () => {
                 </Link>
               </p>
             </span>
+            <span className="flex items-center gap-3">
+             <BsFillGeoAltFill />
+             <p>{address}</p>
+           </span>
+
           </div>
         </span>
       </div>

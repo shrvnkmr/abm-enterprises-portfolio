@@ -33,7 +33,7 @@ const Listings = () => {
                   alt="Estate Image"
                   width={600}
                   height={600}
-                  className=" max-h-40 object-cover md:max-h-80"
+                  className="max-h-40 object-cover md:min-h-80"
                 />
               </CarouselItem>
             ))}
